@@ -1,0 +1,370 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-weight: 600;
+}
+body {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .wrapped {
+  background-color: #7d4aa9;
+  height: 80%;
+  max-width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+body .wrapped .grid {
+  background-color: #191919;
+  display: grid;
+  height: 95%;
+  width: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+  grid-template-columns: 2.5fr 2.5fr 1.6fr 1.6fr;
+  grid-template-rows: 2.5fr 2.2fr 2fr;
+  gap: 2px;
+}
+body .wrapped .grid > * {
+  background-color: #fff;
+  border-radius: 10px;
+}
+body .wrapped .grid .header {
+  grid-column: span 2;
+  grid-row: span 2;
+  padding: 25px 20px;
+  display: grid;
+  grid-template-rows: 0.5fr 2.7fr 0.5fr;
+}
+body .wrapped .grid .header .reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .wrapped .grid .header .reviews .logo {
+  width: 50px;
+  height: 50px;
+}
+body .wrapped .grid .header .reviews .reviews-total {
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight: 400;
+}
+body .wrapped .grid .header .reviews .reviews-label {
+  border-radius: 20px;
+  background-color: #ffc830;
+  padding: 5px 15px 2px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+body .wrapped .grid .header .header__title {
+  font-size: 90px;
+  place-self: center;
+}
+body .wrapped .grid .header .header__subtitle {
+  border-top: 1px solid black;
+  font-size: 20px;
+  padding-top: 20px;
+}
+body .wrapped .grid .blog-post {
+  grid-column: span 2;
+}
+body .wrapped .grid .grid__img-one {
+  background-image: url(https://m.media-amazon.com/images/I/812xaHo4zeL._AC_UF1000,1000_QL80_.jpg);
+  background-size: 100% 100%;
+}
+body .wrapped .grid .nav {
+  background-color: #191919;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .wrapped .grid .nav .nav__item {
+  font-size: xx-small;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 25px;
+}
+body .wrapped .grid .nav .nav__cta {
+  font-size: x-large;
+  font-weight: lighter;
+  color: #fff;
+}
+body .wrapped .grid .grid__cells {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  background-color: #191919;
+  gap: 2px;
+}
+body .wrapped .grid .grid__cells .grid__cell:first-child {
+  background-color: #ffc830;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: xx-small;
+}
+body .wrapped .grid .grid__cells .grid__cell:first-child span {
+  width: min-content;
+  text-transform: uppercase;
+}
+body .wrapped .grid .grid__cells .grid__cell:first-child .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #191919;
+}
+body .wrapped .grid .grid__cells .grid__cell:nth-child(2) {
+  text-transform: uppercase;
+  font-size: large;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .wrapped .grid .grid__cells .grid__cell:nth-child(2) img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+body .wrapped .grid .grid__cells .grid__cell:last-child {
+  grid-row-start: -2;
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+body .wrapped .grid .grid__img-two {
+  background-image: url(https://qr.naver.com/images/wifi-usage.png);
+  background-size: 100% 100%;
+}
+body .wrapped .grid .grid__img-three {
+  background-image: url(https://www.feistees.com/images/uploads/2014/10/the-last-of-us-logo-t-shirt.jpg);
+  background-size: 100% 100%;
+}
+body .wrapped .grid .grid__img-four {
+  background-image: url(https://pliki.ppe.pl/storage/6ad1d0bc99616c15693b/6ad1d0bc99616c15693b.jpeg);
+  background-size: 100% 100%;
+}
+body .wrapped .grid .blog-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+body .wrapped .grid .blog-post .blog-post__row:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body
+  .wrapped
+  .grid
+  .blog-post
+  .blog-post__row:first-child
+  .blog-post__row__col:first-child {
+  display: flex;
+}
+body
+  .wrapped
+  .grid
+  .blog-post
+  .blog-post__row:first-child
+  .blog-post__row__col:first-child
+  .date {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding: 0 5px;
+  margin-right: 10px;
+  border: 1px solid black;
+  height: 60px;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+body
+  .wrapped
+  .grid
+  .blog-post
+  .blog-post__row:first-child
+  .blog-post__row__col:first-child
+  .blog-post__img {
+  width: 40px;
+  height: 60px;
+  border-radius: 30px;
+}
+body
+  .wrapped
+  .grid
+  .blog-post
+  .blog-post__row:first-child
+  .blog-post__row__col:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body
+  .wrapped
+  .grid
+  .blog-post
+  .blog-post__row:first-child
+  .blog-post__row__col:last-child
+  span {
+  width: min-content;
+  text-transform: uppercase;
+  font-size: x-small;
+  margin-right: 10px;
+  text-align: end;
+}
+body
+  .wrapped
+  .grid
+  .blog-post
+  .blog-post__row:first-child
+  .blog-post__row__col:last-child
+  .blog-post__row__col-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffc830;
+}
+body .wrapped .grid .blog-post .blog-post__row:last-child {
+  font-size: 14px;
+  font-weight: lighter;
+}
